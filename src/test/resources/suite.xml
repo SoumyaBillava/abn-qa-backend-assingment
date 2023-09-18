@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="BaseSuite" verbose="1" thread-count="40" parallel="methods" >
+
+    <test name="Gitlab Issue API">
+        <classes>
+            <class name="com.abnamro.assignment.api.crudtest.CreateIssueTest"/>
+            <class name="com.abnamro.assignment.api.crudtest.ReadIssuesTest"/>
+            <class name="com.abnamro.assignment.api.crudtest.DeleteIssueTest"/>
+            <class name="com.abnamro.assignment.api.crudtest.UpdateIssueTest"/>
+        </classes>
+    </test>
+</suite>
